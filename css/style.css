@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Shrikhand&display=swap');
+
+.top_and_bottom_background {
+    background-color: #e4e1ae;
+    text-align: right;
+    padding: 15px;
+}
+
+.titles {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 15px;
+}
+
+.img {
+    border-radius: 30%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header_text {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.main_background {
+    background-color: #304C71;
+}
