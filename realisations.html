@@ -9,34 +9,122 @@
 <body>
     <header class="top_and_bottom_background">
         <div>
-            <a class="header_text" href="index.html">Accueil</a>
-            <a class="header_text" href="contact.html">Contact</a>
-            <a class="header_text" href="cv.html">CV</a>
-            <a class="header_text" href="realisations.html">Realisations</a>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="cv.html">CV</a>
+            <a href="realisations.html">Realisations</a>
         </div>
     </header>
 
     <main class="main_background">
         <h1 style="text-align: center;" class="titles">Mes réalisations</h1>
         <div style="text-align: center;">
-            <a class="header_text" href="">Impression 3D</a>
-            <a class="header_text" href="">Projets de cours</a>    
-            <a class="header_text" href="">Projets personnels</a>
-            <a class="header_text" href="">Projets réalisé dans un cadre professionel</a>
+            <a href="#3d_printing">Impression 3D</a>
+            <a href="#in_class">Projets de Cours</a>    
+            <a href="#personnal_projects">Projets Personnels</a>
+            <a href="#professional_projects">Projets Réalisé dans un Cadre Professionel</a>
         </div>
 
-        <h2 class="titles">En cours :</h2>
+        <h2 id="in_class" class="titles">En formation :</h2>
 
-        <div>
-            <p class="regular_text">Le TP cartes, TP permettant
-                la découverte et la mise en place des flexbox, permettant
-                la mise en place en rangés ou en colonnes d'éléments HTML.
-                <br>
-                <br>
-                Quelque photos :
-            </p>
-            <img src="" alt="">
+        <div class="flexbox">
+            <div class="card">
+                <p><strong>Le TP cartes</strong>, TP permettant
+                    la découverte et la mise en place des flexbox, permettant
+                    la mise en place en rangés ou en colonnes d'éléments HTML.
+                    Cela permet aussi de s'adapter en fonction de la taille de
+                    la page.
+                </p>
+                <a href="tp/TP_cartes.pdf">Découvrir le TP</a>
+                <img src="img/tp_cartes_grand.png" alt="Page web contenant des cartes avec une photo, un titre, et une description.">
+                <img style="object-fit: cover;" src="img/tp_cartes_petit.png" alt="Page web contenant des cartes avec une photo, un titre, et une description.">
+            </div>
+
+            <div class="card">
+                <p><strong>TP "sélecteurs"</strong>, permet d'apprendre
+                    les différences entre les classes, attributs et balises que l'on peut
+                    utiliser avec CSS.
+                </p>
+                <a href="tp/TP_selecteurs.pdf">Découvrir le TP</a>
+                <img src="img/selecteurs_css.png" alt="Photo d'une page web avec des mots isolés par leur couleur.">
+            </div>
+
+            <div class="card">
+                <p><strong>TP "validation et envoi d'un formulaire"</strong>,
+                    nous a permis d'apprendre les balises permettant de réaliser un formulaire
+                    de contact, ou d'inscription par exemple.
+                    Cela permet à la personne réceptionnant ce formulaire d'avoir des informations
+                    comme le nom, le prénom ou encore le numéro de téléphone...
+                    On a peut renseigner si on s'attend à une adresse mail, un numéro de téléphone
+                    et rendre notre expérience utilisateur plus agréable.
+                </p>
+                <a href="tp/TP_validation-envoi.pdf">Découvrir le TP</a>
+                <img src="img/tp_formulaire.png" alt="Photo d'un formulaire sur une page web pour l'inscription à un club.">
+            </div>
+
+            <div class="card">
+                <p><strong>Le TP HTML</strong>, qui nous a permis d'apprendre les bases
+                    du HTML, j'ai appris à incrementer multiple balises utiles à la création
+                    d'un site internet, comme la balise h1, img, et bien d'autres encore.
+                </p>
+                <a href="tp/TP_html.pdf">Découvrir le TP</a>
+                <img src="img/tp_html.png" style="object-fit: cover;" alt="Site web mettant en avant la ville de Péronne.">
+            </div>
+
+            <div class="card">
+                <p><strong>Tutoriel d'installation</strong>, pour ceux qui préfère une vidéo, on a ce qu'il
+                    faut, dans cette présentation, notre équipe de 3 vous explique en anglais
+                    comment installer Python sur votre machine, comment vérifier qu'il fonctionne,
+                    et l'ajouter à votre Visual Studio Code.
+                </p>
+                <video style="padding: 5px;" controls width="300" src="img/python_tutorial antony_leandre_daren.MOV"></video>
+            </div>
         </div>
+
+        <h2 id="3d_printing" class="titles">Impression 3D</h2>
+
+        <div class="flexbox">
+            <div class="card">
+                <p><strong>L'Impression 3D</strong>, une doctrine me
+                    passionnant depuis peu, a permis de développer mes compétences
+                    en modélisation 3D, mais aussi en préparation, anticipation, et,
+                    quand l'imprimante est régulièrement entretenue, on prend bien plus
+                    de plaisir à pratiquer cette passion.
+                </p>
+                <p>Voici un exemple d'une de mes réalisations</p>
+                <img style="object-fit: cover;" src="img/porte_tel.jpg" alt="Trepied de téléphone Imprimé en 3D">
+                <img style="width: 120px;" src="img/porte_tel_avec_tel.jpg" alt="">
+            </div>
+        </div>
+
+        <h2 id="personnal_projects" class="titles">Projets Personnels</h2>
+
+        <div class="flexbox">
+            <div class="card">
+                <p><strong>Python</strong>, après avoir apris Python en autodidacte et à l'école,
+                    je me suis permis de faire multiples projets personnels, comme un trieur de fichier automatique,
+                    ou encore un cookie clicker (jeu ou le but est d'avoir le plus de cookies en cliquand dessus).
+                </p>
+            </div>
+        </div>
+
+        <h2 id="professional_projects" class="titles">Projets Réalisé dans un Cadre Professionel</h2>
+
+        <div class="flexbox">
+            <div class="card">
+                <p><strong>Les Bases de données</strong> de l'hôpital psychiatrique de la somme à Amiens peuvent
+                    être visionner à travers une page web développé en HTML, CSS et comporte surtout un côté
+                    back en PHP, permettant la communication entre le site web et la base de données.
+                    Aujoud'hui, bien qu'un autre développeur soit passé par mon code, c'est toujours mon programme
+                    qui est en vigueur dans leur établissement.
+                    J'ai notamment développer un outil permettant d'ajouter, de modifier et de supprimer un véhicule dans la
+                    base de données (immtriculation, modèle).
+                </p>
+                <img style="object-fit: cover;" src="img/tableau_archives.jpg" alt="Trepied de téléphone Imprimé en 3D">
+                <img src="img/suppression_archives.jpg" alt="">
+            </div>
+        </div>
+
     </main>
 
     <footer class="top_and_bottom_background">
