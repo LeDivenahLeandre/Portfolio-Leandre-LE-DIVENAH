@@ -43,9 +43,10 @@
                 <legend>Message *</legend>
                 <label for="object">Objet</label>
                 <select name="object" id="object" required>
+                    <option value="" disabled selected>Choississez votre option</option>
                     <option value="demande_informations">Demande d'informations</option>
                     <option value="recrutement">Votre profil nous interesse</option>
-                    <option value="autre">Demande autres</option>
+                    <option value="autres">Demande autres</option>
                 </select>
 
                 <br>
@@ -56,8 +57,8 @@
 
             <fieldset>
                 <legend>Consentement *</legend>
-                <label for="reglement">J'accepte l'utilisation des données renseignés.</label>
-                <input class="regular_text" type="checkbox" name="reglement" value="reglement" required>
+                <label for="consent">J'accepte l'utilisation des données renseignés.</label>
+                <input class="regular_text" id="consent" type="checkbox" name="consent" value="consentement" required>
             </fieldset>
 
             <div style="text-align: center;">
