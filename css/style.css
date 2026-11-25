@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-body {
-    background-color: #1e3d65;
-}
-
 .card {
     background-color: #1e3d65;
     border-radius: 10%;
@@ -41,6 +37,16 @@ img {
     padding: 5px;
 }
 
+button {
+    margin: 8px; 
+    padding: 10px;
+    background-color: #1e3d65;
+    font-family: "League Spartan", sans-serif;
+    color: white;
+    font-size: 17px;
+    border-radius: 30%;
+}
+
 .regular_text {
     font-family: "League Spartan", sans-serif;
     font-weight: 400;
@@ -50,7 +56,19 @@ img {
     font-size: 17px;
 }
 
-p {
+table {
+    text-align: center;
+    margin: 15px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px solid rgb(125, 125, 125);
+    padding: 8px;
+    text-align: left;
+}
+
+p, label, legend, tr, td {
     font-family: "League Spartan", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -58,6 +76,8 @@ p {
     padding: 20px;
     font-size: 17px;
 }
+
+
 
 .logo {
     width: 40px;
@@ -87,4 +107,13 @@ a {
 
 .main_background {
     background-color: #304C71;
+}
+
+input:user-invalid {
+    border : 2px solid rgb(195, 51, 51);
+    background-color: rgb(195, 51, 51);
+}
+
+input:user-valid {
+    border : 2px solid green;
 }
